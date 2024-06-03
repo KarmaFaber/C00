@@ -1,0 +1,35 @@
+#include <unistd.h>
+
+void    ft_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+void    ft_putnbr(int a)
+{
+    if (a == -2147483648)
+    {
+        write(1, "-2147483648", 11);
+        return ;
+    }
+    if (a < 0)
+    {
+        ft_putchar('-');
+        a = a * -1;
+    }
+    if (a > 9)
+    {
+        ft_putnbr(a / 10);
+        ft_putnbr(a % 10);
+    }
+    else
+        ft_putchar(a + '0');
+}
+int     main()
+{
+    int a = 83647;
+
+    ft_putnbr(a); 
+    //ft_putchar(a + 48); //tambien vale
+
+}
