@@ -1,27 +1,23 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mzolotar <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/28 08:23:53 by mzolotar          #+#    #+#             */
-/*   Updated: 2024/05/30 08:30:56 by mzolotar         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
 void	ft_putchar(char c)
-
 {
 	write (1, &c, 1);
 }
 
-/*#include <stdio.h>
 
+/*int	main() 
+{    
+	char letter;
+	letter ='s';
+	ft_putchar(letter);
+	return 0;
+}*/
+
+
+//ota posibilidad:
 int	main() 
 {    
-    ft_putchar('c');
-    return 0;
-}*/
+	ft_putchar('f');
+	return 0;
+}
