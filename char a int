@@ -20,7 +20,7 @@ void    ft_putnbr(int a)
     if (a > 9)
     {
         ft_putnbr(a / 10); //función recursiva
-        ft_putnbr(a % 10); ////función recursiva
+        ft_putnbr(a % 10); //función recursiva
     }
     else
         ft_putchar(a + '0'); //ft_putchar(a + 48); //tambien vale
@@ -30,7 +30,7 @@ int     main()
     int a = 83647;
 
     ft_putnbr(a); 
-    
+    return 0;
 
 }
 /*------------------------------------------OTRA VERSION DE LO MISMO----------------------------------------------------*/
